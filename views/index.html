@@ -1,0 +1,19 @@
+<div class="box">
+
+  <div class="box todos">
+    <h2 class="box">文章列表</h2>
+    <ul>
+      <% for (var i = 0; i < blogs.length; i++) {
+        var blog = blogs[i];
+      %>
+        <li>
+        	<h4><a href="#"><%= blog.title %></a></h4>
+        	<div class="con">
+        		<%= blog.content %>
+        	</div>
+        </li>
+      <% } %>
+    </ul>
+  </div>
+
+</div>

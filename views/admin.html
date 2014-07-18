@@ -1,0 +1,21 @@
+<div class="box admin-wrap">
+	<h4>写文章</h4>
+	<form action="/admin/addblog" method="post" id="addblogForm">
+		<input type="hidden" name="_csrf" value="<%- _csrf %>" />
+		<div class="box title-wrap">
+			<h5>标题</h5>
+			<input type="text" class="title-input" name="title" />
+		</div>
+
+		<div class="box content-wrap">
+			<h5>内容</h5>
+			<textarea class="content-ta" name="content">
+				
+			</textarea>
+		</div>
+
+		<div class="box btn-wrap">
+			<input type="submit" class="btn submit-btn" value="提交" />
+		</div>
+	</form>
+</div>
